@@ -1,7 +1,6 @@
 ﻿Public Class CTVForm
     Dim fileReader As System.IO.StreamReader
     Private Sub SNBtn_Click(sender As Object, e As EventArgs) Handles SNBtn.Click
-
         myfilereader("Fullname: ")
         SearchTextbox.Text = ""
     End Sub
@@ -16,9 +15,7 @@
                 For index = 1 To 17
                     stringReader &= vbCrLf & fileReader.ReadLine()
                 Next
-
                 DisplayRichTbox.Text = stringReader
-
             Else
                 DisplayRichTbox.Text = "No Record"
             End If
@@ -34,6 +31,8 @@
     Private Sub SDBtn_Click(sender As Object, e As EventArgs) Handles SDBtn.Click
 
         myfilereader("Date: ")
+
+
         SearchTextbox.Text = ""
     End Sub
 End Class
