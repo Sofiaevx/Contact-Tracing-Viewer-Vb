@@ -27,6 +27,7 @@ Partial Class CTVForm
         Me.SNBtn = New System.Windows.Forms.Button()
         Me.SDBtn = New System.Windows.Forms.Button()
         Me.SABtn = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'DisplayRichTbox
@@ -35,14 +36,14 @@ Partial Class CTVForm
         Me.DisplayRichTbox.Name = "DisplayRichTbox"
         Me.DisplayRichTbox.ReadOnly = True
         Me.DisplayRichTbox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical
-        Me.DisplayRichTbox.Size = New System.Drawing.Size(350, 297)
+        Me.DisplayRichTbox.Size = New System.Drawing.Size(350, 273)
         Me.DisplayRichTbox.TabIndex = 0
         Me.DisplayRichTbox.Text = ""
         '
         'SearchTextbox
         '
         Me.SearchTextbox.Font = New System.Drawing.Font("Segoe UI Symbol", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SearchTextbox.Location = New System.Drawing.Point(12, 324)
+        Me.SearchTextbox.Location = New System.Drawing.Point(13, 305)
         Me.SearchTextbox.Name = "SearchTextbox"
         Me.SearchTextbox.Size = New System.Drawing.Size(350, 25)
         Me.SearchTextbox.TabIndex = 1
@@ -86,12 +87,22 @@ Partial Class CTVForm
         Me.SABtn.Text = "Show all"
         Me.SABtn.UseVisualStyleBackColor = False
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(12, 333)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(173, 13)
+        Me.Label1.TabIndex = 5
+        Me.Label1.Text = "Ex. Dela Cruz, Juan or 10/06/2022"
+        '
         'CTVForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(375, 419)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.SABtn)
         Me.Controls.Add(Me.SDBtn)
         Me.Controls.Add(Me.SNBtn)
@@ -112,4 +123,5 @@ Partial Class CTVForm
     Friend WithEvents SNBtn As Button
     Friend WithEvents SDBtn As Button
     Friend WithEvents SABtn As Button
+    Friend WithEvents Label1 As Label
 End Class
